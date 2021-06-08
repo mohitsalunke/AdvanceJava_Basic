@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       
+       
+      <!--  
+        <bean id="ad1" class="Basics.Address">
+       <property name="city" value="Pune"/>
+       <property name="pincode" value="431517"/>
+        </bean>
+        
+      
+       
+       
+       <bean id="S2" class="Basics.Student">
+       <constructor-arg value="101"></constructor-arg>
+       <constructor-arg value="Salman"></constructor-arg>
+       <constructor-arg ref="ad1"></constructor-arg>     
+       </bean>
+       
+        <bean id="ad1" class="Basics.Address">
+       <property name="city" value="Pune"/>
+       <property name="pincode" value="431517"/>
+        </bean>
+        
+       <bean id="S3" class="Basics.Student">
+       <constructor-arg value="101"></constructor-arg>
+       <constructor-arg value="Salman"></constructor-arg>
+       <constructor-arg>
+        <bean class="Basics.Address">
+       <property name="city" value="Pune"/>
+       <property name="pincode" value="431517"/>
+        </bean>
+        </constructor-arg>   
+       </bean>
+        -->
+     
+     <!--   <bean id="helloworld" class="Basics.HelloWorld" scope="prototype">
+       <property name="message" value="First Hello">
+       </property>
+       </bean>
+      
+        <bean id="byeworld" class="Basics.ByeWorld" scope="prototype">
+       <property name="message" value="Bye">
+       </property>
+       </bean> -->
+       
+       <bean id="q" class="Basics.Question">
+       <constructor-arg value="111"/>
+       <constructor-arg value="What is java"/>
+       <constructor-arg>
+           <list>
+                <value>Java is a programming language</value>
+                <value>Java is a platform independent</value>
+           </list>
+       </constructor-arg>
+       </bean>
+       
+ </beans>
+       
+       
+       
+       
+       
+       
